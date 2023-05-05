@@ -6,20 +6,15 @@ import jakarta.persistence.*;
 @Table(name = "buses")
 public class Bus {
 	
-	
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-	private int id;
+	private int busid;
     
-    @Column(name = "registration_number")
-    private String registrationNumber;
+    @Column(name = "bus_type")
+    private String busType;
+    private String busNumber;
+    private int busCapacity;
     
-    @Column(name = "model")
-    private String model;
     
-    @Column(name = "capacity")
-    private int capacity;
-	
-
-    // Getters and setters
-}
+    
+    }
