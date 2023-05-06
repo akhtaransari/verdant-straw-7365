@@ -2,15 +2,17 @@ package com.masai.verdant_straw_7365.DAOIntrafaces;
 
 import java.util.List;
 
+import com.masai.verdant_straw_7365.DTO.Customer;
+
 public interface User {
     User findById(int id);
     
-    List<User> findAll();
+    List<Customer> findAll();
     
-    void save(User user);
+    String save(Customer customer);
     
-    void update(User user);
+    void update(Customer customer);
     
-    void delete(User user);
+    void delete(Customer customer);
 }
 
