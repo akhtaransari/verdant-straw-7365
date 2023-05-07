@@ -28,9 +28,9 @@ public class ToursAndTravelsPackageManagementImple implements ToursAndTravelsPac
 		if (pkg == null) {
 			return false;
 		}else {
-			String sql = "DELETE FROM Package e WHERE e.id = :id";
+			String sql = "DELETE FROM Package e WHERE e.id = :packageId";
 			em.getTransaction().begin();
-			em.createQuery(sql).setParameter("id", id).executeUpdate();
+			em.createQuery(sql).setParameter("packageId", id).executeUpdate();
 			em.getTransaction().commit();
 			em.close();
 		}
@@ -59,9 +59,9 @@ public class ToursAndTravelsPackageManagementImple implements ToursAndTravelsPac
 		if (pkg == null) {
 			return false;
 		}else {
-			String sql = "DELETE FROM Travels e WHERE e.id = :id";
+			String sql = "DELETE FROM Travels e WHERE e.id = :travelsID";
 			em.getTransaction().begin();
-			em.createQuery(sql).setParameter("id", id).executeUpdate();
+			em.createQuery(sql).setParameter("travelsID", id).executeUpdate();
 			em.getTransaction().commit();
 			em.close();
 		}

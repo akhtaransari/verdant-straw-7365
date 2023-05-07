@@ -5,14 +5,14 @@ import java.util.List;
 import com.masai.verdant_straw_7365.DTO.Customer;
 
 public interface User {
-    User findById(int id);
+    Customer findById(int id);
     
     List<Customer> findAll();
     
     String save(Customer customer);
     
-    void update(Customer customer);
+    boolean update(Customer customer);
     
-    void delete(Customer customer);
+    boolean delete(int id);
 }
 

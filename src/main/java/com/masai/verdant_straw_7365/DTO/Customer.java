@@ -30,6 +30,17 @@ public class Customer {
 		this.mobile = mobile;
 		this.email = email;
 	}
+	
+	
+	public Customer( String customerPassword, String address, String mobile, String email) {
+		super();
+		this.customerPassword = customerPassword;
+		this.address = address;
+		this.mobile = mobile;
+		this.email = email;
+	}
+	
+	
 
 	@Override
 	public String toString() {

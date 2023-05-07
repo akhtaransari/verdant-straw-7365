@@ -21,7 +21,6 @@ public class AuthorizationImple implements Authorization {
 	
 	public int userAuthorization (String username , String password) {
 		Customer customer = EMUtils.getEntityManager().find(Customer.class,username);
-		System.out.println(customer);
 		if (customer == null) return -2;
 		else if(customer.getCustomerPassword().equals(password)) {
 			return customer.getCustomerId();
